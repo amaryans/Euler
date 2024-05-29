@@ -25,15 +25,27 @@ int problem1() {
 
 }
 
-
 int problem2() {
+	// Find the sum of the even fibbonaci numbers less that 4e9
 	int sum = 0;
-	sum = fibbonaci(34, 0, 1);
+	sum = fibbonaci(35, 0, 1, 0);
 	return sum;
 }
 
+int problem3() {
+	// Find the largest prime factor of 600851475143
+	long long largeNum = 600851475143;
+	return primeFactors(largeNum);
+}
+
+int problem4() {
+	// Find the largest palindromic number made from the product of 3 digits
+	// Product of two 3 digit numbers will be on the scale of 10e6
+
+}
 int main() {
 	std::cout << problem1() << std::endl;
 	std::cout << problem2() << std::endl;
+	std::cout << problem3() << std::endl;
 	std::cin.get();
 }
